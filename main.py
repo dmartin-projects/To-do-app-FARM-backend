@@ -19,10 +19,7 @@ from databse import (
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:3000",
-    '*',
-]
+origins = ['*']
 
 app.add_middleware(
     CORSMiddleware,
