@@ -12,6 +12,8 @@ if os.getenv("DATABASE_URI"): DATABASE_URI = os.getenv("DATABASE_URI") #ensures 
 import motor.motor_asyncio
 
 
+
+
 client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
 
 database = client.TodoList
